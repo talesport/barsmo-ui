@@ -1,0 +1,13 @@
+:root {
+    --font-primary: 'Inter', sans-serif;
+    --font-secondary: 'Source Code Pro', monospace;
+
+    --clr-white: #ECF0F1;
+    --clr-title: #2B2B2B;
+    --clr-text: #383838;
+    --clr-primary: #C0392B;
+    --clr-primary-dark: #A93226;
+    --clr-primary-darker: #922B21;
+    --clr-text-light: #595959;
+
+}
