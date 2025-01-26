@@ -1,0 +1,92 @@
+.hero {
+    color: var(--clr-white);
+    margin-top: var(--size-sm);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.hero__cta {
+    max-width: 34ch;
+    padding: 1.5em 2em;
+    color: var(--clr-charcoal);
+    background-color: var(--clr-light-gray);
+    font-size: var(--size-1xl);
+}
+
+.hero__cta>*+* {
+    margin-top: 1.125em;
+}
+
+.cta__title {
+    margin-bottom: 0.75em;
+    font-family: var(--font-secondary);
+    font-size: var(--size-2xl);
+}
+
+.cta__email-input {
+    /* display: inline; */
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 6px;
+    font-size: var(--size-base);
+    font-family: var(--font-secondary);
+    color: var(--clr-charcoal);
+    width: 100%;
+    /* position: relative; */
+}
+
+.cta__hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.cta__submit-btn {
+    width: 100%;
+}
+
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+@media (min-width: 640px) {
+    .hero {
+        background-image: url('../../public/beard-trim-hero.PNG');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    }
+
+    .cta__hero-img {
+        display: none;
+    }
+}
+
+/* md */
+@media (min-width: 768px) {
+    .hero__cta {
+        max-width: 55ch;
+        margin: 1em 2em;
+    }
+
+    .cta__title {
+        text-align: center;
+    }
+    
+.cta__submit-btn {
+    float: right;
+    width: unset;
+}
+}
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1546px) {} */

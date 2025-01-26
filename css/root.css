@@ -1,13 +1,63 @@
 :root {
+    /* fonts */
     --font-primary: 'Inter', sans-serif;
     --font-secondary: 'Source Code Pro', monospace;
 
+    /* colors */
     --clr-white: #ECF0F1;
-    --clr-title: #2B2B2B;
+    --clr-off-white: #F5EFED;
+    --clr-darker-white: #D5DBDB;
+    --clr-charcoal-white: #BDC3C7;
+    --clr-charcoal: #2B2B2B;
+    --clr-light-gray: rgba(240, 240, 240, 0.7);
     --clr-text: #383838;
     --clr-primary: #C0392B;
+    --clr-primary-alt:#570C15;
+    --clr-primary-alt1: #630E18;
+    --clr-primary-alt2: #70161E;
+    --clr-primary-alt3: #095F46;
+    --clr-primary-alt4: #084F3C;
+    --clr-primary-alt5: #033A1F;
     --clr-primary-dark: #A93226;
     --clr-primary-darker: #922B21;
     --clr-text-light: #595959;
 
+    /* sizes */
+    --size-xxs: 0.5rem;
+    --size-xs: 0.75rem;
+    --size-sm: 0.875rem;
+    --size-base: 1rem;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+
+    --icon-size: 1.5rem;
 }
+
+
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1546px) {} */

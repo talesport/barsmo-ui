@@ -3,75 +3,236 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
-        rel="stylesheet">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://cdn.lineicons.com/5.0/lineicons.css" />
+    <link rel="stylesheet"
+          href="/css/modern-normalize.css">
+    <link rel="stylesheet"
+          href="/css/reset.css">
+    <link rel="stylesheet"
+          href="/css/root.css">
+    <link rel="stylesheet"
+          href="/css/utilities.css">
+    <link rel="stylesheet"
+          href="/css/components/header.css">
+    <link rel="stylesheet"
+          href="/css/components/mobile-nav.css">
+    <link rel="stylesheet"
+          href="/css/components/hero.css">
     <title>Barsmo Marketing</title>
-    <link rel="stylesheet" href="/css/modern-normalize.css">
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/root.css">
-    <link rel="stylesheet" href="/css/utilities.css">
+
+    <script src="/js/index.js"
+            defer></script>
 </head>
 
 <body>
-    <!-- <h1>Welcome to Barsmo Marketing</h1>
-    <h2>hope</h2>
-    <h3>time</h3>
-    <h4>is</h4>
-    <h5>on</h5>
-    <h6>my</h6>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        Eaque ipsam cumque eos neque, numquam quam explicabo maiores perspiciatis
-        est tempora quidem ipsum reiciendis corporis officia <a href="#">voluptatem</a> nemo sint velit esse!
-    </p>
-    <button id="button">Click me</button> -->
-    <section class="container">
-        <h1>Welcome to Barsmo</h1>
-        <p>Barsmo is the ultimate platform designed for beauty industry professionals and businesses. Whether you’re a
-            licensed barber, cosmetologist, or salon owner, Barsmo helps you find the perfect job or hire the right
-            talent.
-        </p>
-
-        <h2>Instant Job Matching</h2>
-        <p>Find jobs that match your skills and location instantly. Our advanced matching system connects you with
-            opportunities that fit your career goals, saving you time and effort.</p>
-
-        <h2>Connect with Top Talent</h2>
-        <p>Easily hire licensed professionals for your salon or barbershop. Access a comprehensive talent pool of highly
-            qualified beauty professionals, all in one place.</p>
-
-        <h2>Discover Barber & Cosmetology Schools</h2>
-        <p>Explore schools and educators to advance your beauty career. Barsmo provides resources to help you enhance
-            your
-            skills and stay ahead in the industry.</p>
-
-        <h2>Join Our Community</h2>
-        <p>Become part of a vibrant community of skilled professionals. Discover exciting opportunities, connect with
-            industry leaders, and advance your career in the beauty world. <a href="#" class="cta">Get Started</a> Your next big opportunity awaits!</p>
-
-        <div>
-            <h2>Get Exclusive Barber Opportunities Delivered to Your Inbox!</h2>
-            <p>Join the Barsmo network today and unlock access to premium job offers, exclusive barber events, and
-                industry
-                tips straight to your email. Stay ahead of the game—don’t miss out!</p>
-
-            <form action="/subscribe" method="POST" class="barber-signup-form">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
-
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-
-                <button type="submit" class="btn">Join Now</button>
-
-            </form>
+    <header class="header container">
+        <div class="header__title-container">
+            <img src="/barsmo.png"
+                 alt="Barber Logo"
+                 width="75px"
+                 height="75px"
+                 class="header__logo">
+            <span class="header__title">Barsmo</span>
         </div>
-        
-    </section>
-    <script src="/js/index.js"></script>
+        <button class="header__bars"
+                onclick="openMobileNav()"
+                aria-label="toggle navigation">
+            <svg aria-hidden="true"
+                 xmlns="http://www.w3.org/2000/svg"
+                 fill="none"
+                 viewBox="0 0 24 24"
+                 stroke-width="1.5"
+                 stroke="currentColor">
+                <path stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </button>
+        <nav class="header__menu">
+            <div class="header__social-container">
+                <a href="https://instagram.com/barsmo"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   title="Instagram"
+                   aria-label="Instagram"
+                   class="header__social">
+                    <i aria-hidden="true"
+                       class="lni lni-instagram"></i>
+                </a>
+                <a href="#"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   title="Facebook"
+                   aria-label="Facebook"
+                   class="header__social">
+                    <i aria-hidden="true"
+                       class="lni lni-facebook-square"></i>
+                </a>
+                <a href="#"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   title="X"
+                   aria-label="X"
+                   class="header__social">
+                    <i aria-hidden="true"
+                       class="lni lni-x"></i>
+                </a>
+            </div>
+            <div class="header__separator"></div>
+            <button href="#"
+                    class="header__demo-btn">Demo</button>
+        </nav>
+    </header>
+
+    <!-- mobile nav -->
+    <div id="mobile-nav"
+         class="mobile-nav">
+        <button class="mobile-nav__close-btn"
+                onclick="closeMobileNav()">close</button>
+        <img src="/barsmo.png"
+             alt="Barber Logo"
+             width="75px"
+             height="75px"
+             class="mobile-nav__logo">
+        <div class="mobile-nav__social-container">
+            <a href="https://instagram.com/barsmo"
+               target="_blank"
+               rel="noopener noreferrer"
+               title="Instagram"
+               aria-label="Instagram"
+               class="mobile-nav__social">
+                <i aria-hidden="true"
+                   class="lni lni-instagram"></i>
+            </a>
+            <a href="#"
+               target="_blank"
+               rel="noopener noreferrer"
+               title="Facebook"
+               aria-label="Facebook"
+               class="mobile-nav__social">
+                <i aria-hidden="true"
+                   class="lni lni-facebook-square"></i>
+            </a>
+            <a href="#"
+               target="_blank"
+               rel="noopener noreferrer"
+               title="X"
+               aria-label="X"
+               class="mobile-nav__social">
+                <i aria-hidden="true"
+                   class="lni lni-x"></i>
+            </a>
+        </div>
+        <div class="mobile-nav__separator"></div>
+        <button href="#"
+                class="mobile-nav__demo-btn btn"
+                style="background-color: var(--clr-primary-alt);">Demo</button>
+        <button href="#"
+                class="mobile-nav__demo-btn btn"
+                style="background-color: var(--clr-primary-alt1);">Demo</button>
+        <button href="#"
+                class="mobile-nav__demo-btn btn"
+                style="background-color: var(--clr-primary-alt2);">Demo</button>
+        <button href="#"
+                class="mobile-nav__demo-btn btn"
+                style="background-color: var(--clr-primary-alt3);">Demo</button>
+        <button href="#"
+                class="mobile-nav__demo-btn btn"
+                style="background-color: var(--clr-primary-alt4);">Demo</button>
+        <button href="#"
+                class="mobile-nav__demo-btn btn"
+                style="background-color: var(--clr-primary-alt5);">Demo</button>
+    </div>
+
+    <main>
+        <section class="container hero">
+            <div class="hero__cta">
+                <h1 class="cta__title">Find Your Next Barber Job</h1>
+                <!-- <p class="cta__sub-title">Control your destiny with style.</p> -->
+                <input type="text"
+                       class="cta__email-input"
+                       placeholder="Email">
+                <button href="#"
+                        class="cta__submit-btn btn">Get Started</button>
+            </div>
+            <img class="cta__hero-img"
+                 src="/beard-trim-hero.PNG"
+                 alt="">
+        </section>
+        <!-- <section class="container">
+            <h1>Welcome to Barsmo</h1>
+            <p>Barsmo is the ultimate platform designed for beauty industry professionals and businesses. Whether you’re
+                a
+                licensed barber, cosmetologist, or salon owner, Barsmo helps you find the perfect job or hire the right
+                talent.
+            </p>
+
+            <h2>Instant Job Matching</h2>
+            <p>Find jobs that match your skills and location instantly. Our advanced matching system connects you with
+                opportunities that fit your career goals, saving you time and effort.</p>
+
+            <h2>Connect with Top Talent</h2>
+            <p>Easily hire licensed professionals for your salon or barbershop. Access a comprehensive talent pool of
+                highly
+                qualified beauty professionals, all in one place.</p>
+
+            <h2>Discover Barber & Cosmetology Schools</h2>
+            <p>Explore schools and educators to advance your beauty career. Barsmo provides resources to help you
+                enhance
+                your
+                skills and stay ahead in the industry.</p>
+
+            <h2>Join Our Community</h2>
+            <p>Become part of a vibrant community of skilled professionals. Discover exciting opportunities, connect
+                with
+                industry leaders, and advance your career in the beauty world. <a href="#"
+                   class="cta">Get Started</a>
+                Your
+                next big opportunity awaits!</p>
+
+            <div>
+                <h2>Get Exclusive Barber Opportunities Delivered to Your Inbox!</h2>
+                <p>Join the Barsmo network today and unlock access to premium job offers, exclusive barber events, and
+                    industry
+                    tips straight to your email. Stay ahead of the game—don’t miss out!</p>
+
+                <form action="/subscribe"
+                      method="POST"
+                      class="barber-signup-form">
+                    <label for="name">Your Name:</label>
+                    <input type="text"
+                           id="name"
+                           name="name"
+                           placeholder="Enter your name"
+                           required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="Enter your email address"
+                           required>
+
+                    <button type="submit"
+                            class="btn">Join Now</button>
+
+                </form>
+            </div> 
+
+        </section>-->
+    </main>
+    <footer></footer>
+    <!-- <div style="height: 100vh"></div> -->
 </body>
 
 </html>

@@ -41,7 +41,7 @@ h4,
 h5,
 h6 {
     letter-spacing: -0.025em;
-    color: var(--clr-title);
+    color: var(--clr-charcoal);
 }
 
 strong {

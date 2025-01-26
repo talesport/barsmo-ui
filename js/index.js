@@ -1,2 +1,7 @@
+const closeMobileNav = () => {
+    document.querySelector('#mobile-nav').style.display = 'none';
+}
 
-console.log('Hello, Webpack!');
+const openMobileNav = () => {
+    document.querySelector('#mobile-nav').style.display = 'flex';
+}
